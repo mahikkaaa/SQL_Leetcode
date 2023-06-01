@@ -1,0 +1,5 @@
+SELECT DISTINCT m.name as name
+FROM employee e join employee m
+on m.id= e.managerId
+group by m.id
+having count(*) >=5
